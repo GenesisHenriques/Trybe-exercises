@@ -1,5 +1,2 @@
-O que eu vou aprender na Trybe:
-
--Unix
-_ Bash
-- Git
+HTML
+CSS

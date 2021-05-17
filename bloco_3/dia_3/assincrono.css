@@ -1,0 +1,10 @@
+.lorem{
+    color: red;
+}
+.abc{
+    background-color: blue;
+    width: 80%;
+    height: 300px;
+    overflow-x:auto;
+    overflow-Y:auto;
+}

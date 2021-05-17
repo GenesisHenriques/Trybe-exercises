@@ -1,0 +1,27 @@
+.caixa {
+    color: white; /*Cor da letra*/
+    display: inline-block; /* Coloca os blocos em linha*/
+    line-height: 50px;
+    text-align: center; /*Alinha o texto no centro*/
+    vertical-align: top; /*Alinha pelo top na vertical*/
+  }
+
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
+
+  .padding {
+  /* insira aqui um padding de 20px na classe abaixo para aplicá-lo aos itens B, C e D */
+  padding: 20px;/*Espaço para dentro do bloco*/
+  }
+
+  .margin {
+  /* insira aqui uma margem de 30px na classe abaixo para aplicá-la aos itens C e D */
+  margin: 30px;/*Espaço para dentro do bloco*/
+  }
+
+  .border {
+  /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+  border: 5px solid black; /*Borda com tamanho 5px, solida com cor preta*/
+  }

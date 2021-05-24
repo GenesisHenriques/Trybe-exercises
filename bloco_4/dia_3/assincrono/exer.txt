@@ -1,0 +1,41 @@
+PRIMEIRO
+
+1 - Cria o array com os numeros;
+2 - Cria uma repetição corespondente ao tamanho do array.
+3 - Imprime o index de acordo com o index da repetição.
+
+SEGUNDO
+
+1 - Cria o array com os numeros;
+2 - Cria uma variável para armazenar o "total".
+3 - Cria uma repetição corespondente ao tamanho do array.
+3 - Dentro da repetição incrementa o valor de cada posição do index a variável "total".
+4 - Imprima o total.
+
+TERCEIRO
+
+1 - Cria o array com os numeros;
+2 - Cria uma variável para armazenar o "total" e uma para armazenar a "média".
+3 - Cria uma repetição corespondente ao tamanho do array.
+3 - Dentro da repetição incrementa o valor de cada posição do index a variável "total".
+4 - Divida o total pelo langth do array.
+5 - Imprima o valor da media
+
+Quarto
+
+1 - Cria o array com os numeros;
+2 - Cria uma variável para armazenar o "total" e uma para armazenar a "média".
+3 - Cria uma repetição corespondente ao tamanho do array.
+3 - Dentro da repetição incrementa o valor de cada posição do index a variável "total".
+4 - Divida o total pelo langth do array.
+5 - Crie um IF ELSE para verificar se é ,maior ou menor que 20.
+6 - Imprima a mensagens de acordo com o resusltado do IF ELSE.
+
+QUINTO
+
+1 - Cria o array com os numeros;
+2 - Cria uma variável "maior" com o valor 0.
+3 - Cria uma repetição corespondente ao tamanho do array.
+4 - Compare o elemento do index(um por um) com a variavel "maior".
+5 - Caso o index sejá maior que "maior", atribua o valor do index em "maior".
+6 - Imprima o valor de "maior".

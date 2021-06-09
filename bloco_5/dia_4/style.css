@@ -1,0 +1,30 @@
+body{
+  text-align: center;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+#option{
+  background-color: #58555A;
+}
+
+.divs{
+  display: inline-block;
+  margin: 10px;
+  width: 17%;
+}
+
+.ops{
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+
+#main-text {
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+}

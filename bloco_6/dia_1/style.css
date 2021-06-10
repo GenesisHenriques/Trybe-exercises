@@ -1,0 +1,45 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: blue;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  color: blue;
+}
+
+.style-box {
+  background-color: white;
+  width: 50%;
+  margin: 40px auto;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.line-content {
+  margin: 15px;
+}
+
+.style-box input[type='text'], input[type='email']{
+  width: 100%;
+  padding: 5px;
+}
+
+.style-box input, #estados{
+  padding: 5px;
+  font-size: 15px;
+}
+
+#dadosEmpregoAntigo {
+  text-align: center;
+}
+
+.filhos {
+  margin-bottom: 10px;
+}
+
+#cargo {
+  width: 85%;
+}

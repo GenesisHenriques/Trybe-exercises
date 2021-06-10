@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="style-box">
+    <h1>Formulario</h1>
+  </header>
+
+  <form action="" method="get" class="style-box">
+    <div class="line-content">
+      <label for="name">Nome:</label>
+      <input type="text" name="name" maxlength="40" required id="name">
+    </div>
+
+    <div class="line-content">
+      <label for="email">Email:</label>
+      <input type="email" name="email" maxlength="50" required id="email">
+    </div>
+
+    <div class="line-content">
+      <label for="cpf">CPF:</label>
+      <input type="number" name="cpf" maxlength="11" required id="cpf">
+    </div>
+
+    <div class="line-content">
+      <label for="endereco">Endereço:</label>
+      <input type="text" name="endereco" maxlength="200" required id="endereco">
+    </div>
+
+    <div class="line-content">
+      <label for="cidade">cidade:</label>
+      <input type="text" name="cidade" maxlength="28" required id="cidade">
+    </div>
+
+    <div class="line-content">
+      <label for="estados">Estado:</label>
+      <select id="estados" required>
+      </select>
+    </div>
+
+    <div class="line-content">
+      <fieldset>
+        <legend>Moradia</legend>
+        <label for="moradia1">Casa:</label>
+        <input type="radio" name="moradia" id="moradia1" required>
+        <label for="moradia2">Apartamento:</label>
+        <input type="radio" name="moradia" id="moradia2" required>
+      </fieldset>
+    </div>
+
+    <div class="line-content">
+      <fieldset id="dadosEmpregoAntigo">
+
+        <legend>Dados do último emprego</legend>
+        <label for="resumo"></label>
+        <textarea name="resumo" class="filhos" id="resumo" cols="80" rows="5" placeholder="Resumo do currículo"></textarea>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" name="cargo" class="filhos" id="cargo" required maxlength="40">
+
+        <label for="descricaoDoCargo"></label>
+        <textarea name="descricaoDoCargo" class="filhos" id="descricaoDoCargo" cols="80" rows="5" placeholder="Redecrição do cargo"></textarea>
+
+        <label for="inicio">Data de Ínicio</label>
+        <input type="date" name="inicio" class="filhos" id="inicio">
+
+      </fieldset>
+    </div>
+
+    <button class="submit-button" type="submit">Enviar</button>
+    <button class="clear-button" type="button">Limpar</button>
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+</html>

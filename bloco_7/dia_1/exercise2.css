@@ -1,0 +1,37 @@
+body {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#amountOfClick {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#change-string {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#enviar {
+  margin-top: 5px;
+}
+
+
+

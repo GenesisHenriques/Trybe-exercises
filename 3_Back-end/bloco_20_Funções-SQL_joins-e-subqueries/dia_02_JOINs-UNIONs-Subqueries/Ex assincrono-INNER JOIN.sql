@@ -1,0 +1,85 @@
+-- Exercicios assincronos sobre - INNER JOIN
+
+SELECT 
+    A.actor_id, A.first_name, F.film_id
+FROM
+    sakila.actor AS A
+        INNER JOIN
+    sakila.film_actor AS F ON A.actor_id = F.actor_id
+
+    -- 2 Use o JOIN para exibir o nome , sobrenome e endereço de
+SELECT 
+    F.first_name, F.last_name, A.address
+FROM
+    sakila.staff AS F
+        INNER JOIN
+    sakila.address AS A ON F.address_id = A.address_id
+ 
+    -- 3 Exiba o id do cliente , nome e email dos primeiros 100 clientes,
+SELECT 
+    C.customer_id,
+    C.first_name,
+    C.email,
+    A.address_id,
+    A.address
+FROM
+    sakila.customer AS C
+        INNER JOIN
+    sakila.address AS A ON C.address_id = A.address_id
+ORDER BY C.first_name DESC
+LIMIT 100
+    
+-- 4 Exiba o nome , email , id do endereço , endereço e distrito
+-- dos clientes que moram no distrito da California e que contêm
+-- "rene" em seus nomes. As informações podem ser encontradas nas tabelas address e customer .
+
+SELECT
+	C.first_name, C.email, C.address_id, A.address, A.district
+FROM
+	sakila.customer AS C
+INNER JOIN sakila.address AS A
+ON C.address_id = A.address_id
+WHERE A.district = 'California' AND C.first_name LIKE '%rene%';
+
+-- 5 Exiba o nome e a quantidade de endereços dos clientes cadastrados.
+-- Ordene seus resultados por nomes de forma decrescente. Exiba somente
+-- os clientes ativos. As informações podem ser encontradas na tabela address e customer .
+
+SELECT C.first_name, COUNT(A.address) AS 'Quantidade'
+FROM sakila.customer AS C
+INNER JOIN sakila.address AS A
+ON A.address_id = C.address_id
+WHERE C.active = 1
+GROUP BY C.first_name
+ORDER BY C.first_name DESC;
+
+-- 6 Monte uma query que exiba o nome , sobrenome e a média de valor
+-- ( amount ) paga aos funcionários no ano de 2006. Use as tabelas payment e staff .
+-- Os resultados devem estar agrupados pelo nome e sobrenome do funcionário.
+
+SELECT S.first_name, S.last_name, AVG(P.amount) AS 'Média'
+FROM sakila.staff AS S
+INNER JOIN sakila.payment AS P
+ON S.staff_id = P.staff_id
+WHERE
+YEAR(P.payment_date) = 2006
+GROUP BY S.first_name, S.last_name;
+
+-- 7 Monte uma query que exiba o id do ator ,
+-- nome , id do filme e título do filme , usando as
+-- tabelas actor , film_actor e film . Dica: você
+-- precisará fazer mais de um JOIN na mesma query .
+
+SELECT 
+    A.actor_id, A.first_name, FA.film_id, F.title
+FROM
+    sakila.actor AS A
+        INNER JOIN
+    sakila.film_actor AS FA ON A.actor_id = FA.actor_id
+        INNER JOIN
+    sakila.film AS F ON F.film_id = FA.film_id;
+
+
+
+
+

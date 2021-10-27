@@ -1,0 +1,30 @@
+USE albuns;
+
+CREATE DATABASE IF NOT EXISTS albuns;
+
+CREATE TABLE Artista (
+	Artista_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL
+) ENGINE = InnoDB;
+
+CREATE TABLE Estilo_Musica (
+	Estilo_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL
+) ENGINE = InnoDB;
+
+CREATE TABLE Cancao (
+	cancao_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome INT NOT NULL,
+    Titulo VARCHAR(50) NOT NULL,
+    Preco DOUBLE NOT NULL,
+    Estilo_id INT NOT NULL,
+    FOREIGN KEY (artista_id) REFERENCES Artista(artista_id),
+    FOREIGN KEY (Estilo_id) REFERENCES Estilo_Musica(Estilo_id)
+) ENGINE = InnoDB;
+
+CREATE TABLE Cancao (
+	Cancao_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(50) NOT NULL,
+	Album_id INT NOT NULL,
+	FOREIGN KEY (Album_id) REFERENCES Album(Album_id)
+) ENGINE = InnoDB;

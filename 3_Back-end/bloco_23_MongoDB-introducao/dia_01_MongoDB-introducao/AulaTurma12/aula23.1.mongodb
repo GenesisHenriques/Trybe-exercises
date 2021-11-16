@@ -1,0 +1,65 @@
+// Add um novo documento na coleção - Cria um ID aleatorio
+db.videos.insertOne({
+  name: "despacito",
+  views: 9000000000,
+  channel: "daddy yankee",
+  rated_r: false
+});
+
+
+// Add um novo documento na coleção - Cria um ID aleatorio na força
+db.videos.insertOne({
+  _id: new ObjectId(),
+  name: "Um lugar silencioso - trailer",
+  views: 1000000,
+  channel: "warner bros",
+  rated_r: true
+});
+
+
+// Procura os valores na coleção 'videos'
+db.videos.find();
+
+
+// Add varios valores em uma coleção
+db.videos.insertMany([
+  {
+    name: "baby shark",
+    views: 90000000000,
+    comments: [
+      {
+        user_id: "ABC",
+        usernme: "Pedro",
+        comment: "Esse video é muito engraçado"
+      }
+    ],
+    playlists: {
+      name: "playlist kids"
+    },
+    channel: "kids channel"
+  },
+  {
+    name: "trailer do harry potter 1",
+    actors: [
+      {
+        name: "emma watson",
+        character: "hermione"
+      }
+    ],
+    channel: "warner bros"
+  }
+]);
+
+
+// Faz o find com o filtro do primeiro parametro
+db.videos.findOne({ channel: "warner bros" });
+
+// Faz o find com o filtro e só mostra a tabela name e views
+db.videos.find({ channel: "warner bros" }, {name: true, views: true});
+
+// Deleta um BD
+use('trybe');
+db.dropDatabase();
+
+//
+db.videos.find().skip(2).limit(1);

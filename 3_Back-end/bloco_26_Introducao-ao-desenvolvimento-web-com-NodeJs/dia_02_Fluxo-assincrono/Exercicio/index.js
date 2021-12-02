@@ -6,6 +6,12 @@
 
 // 2
 
-const { main } = require('./ex02');
-const ex02 = main;
-ex02;
+// const { main } = require('./ex02');
+// const ex02 = main;
+// ex02;
+
+// 3
+
+const { main } = require('./ex03');
+const ex03 = main;
+ex03;

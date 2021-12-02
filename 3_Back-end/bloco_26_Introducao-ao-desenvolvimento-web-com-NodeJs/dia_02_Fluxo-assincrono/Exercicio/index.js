@@ -1,14 +1,11 @@
-async function main(p1, p2, p3) {
-  const promise = new Promise((resolve, reject) => {
-    let sumPar = 0;
+// 1
 
-    if ((typeof(p1) !== 'number') || (typeof(p2) !== 'number') || (typeof(p3) !== 'number')) {
-      reject(new Error('Informe apenas números'))
-    } else {
-      sumPar = (p1 + p2) * p3;
-      sumPar > 50 ? resolve(sumPar) : reject(new Error('Valor muito baixo'))
-    }
-  })
-};
+// const { doMath } = require('./ex01');
+// const ex01 = doMath;
+// ex01;
 
-main(50, 1, 1);
+// 2
+
+const { main } = require('./ex02');
+const ex02 = main;
+ex02;

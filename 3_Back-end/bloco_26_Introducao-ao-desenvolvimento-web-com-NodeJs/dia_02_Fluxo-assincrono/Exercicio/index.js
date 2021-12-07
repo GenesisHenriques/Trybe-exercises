@@ -43,6 +43,18 @@
 // 7 Crie um script que substitua uma palavra por outra em um arquivo escolhido pela pessoa usuária:
 
 
-const { substituiPalavra } = require('./ex07');
-const ex07 = substituiPalavra;
-ex07;
+// const { substituiPalavra } = require('./ex07');
+// const ex07 = substituiPalavra;
+// ex07;
+
+
+// 8 Escreva uma função que receba um número inteiro maior que 0 e retorne uma Promise.
+// 9 Se o número for múltiplo de 3, resolva a Promise com o valor "Fizz".
+// 10 Se o número for múltiplo de 5, resolva a Promise com o valor "Buzz".
+// 11 Se o número for múltiplo de 3 e 5, resolva a Promise com o valor "FizzBuzz".
+// 12 Caso contrário, rejeite a Promise com o valor do número.
+
+
+const { fizzBuzz } = require('./ex08');
+const ex08 = fizzBuzz;
+ex08;

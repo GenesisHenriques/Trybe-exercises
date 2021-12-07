@@ -1,0 +1,19 @@
+{
+  "name": "aulaturma12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests",
+    "start": "node readfile.js"
+  },
+  "author": "Genesis",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.10",
+    "sinon": "^12.0.1"
+  }
+}

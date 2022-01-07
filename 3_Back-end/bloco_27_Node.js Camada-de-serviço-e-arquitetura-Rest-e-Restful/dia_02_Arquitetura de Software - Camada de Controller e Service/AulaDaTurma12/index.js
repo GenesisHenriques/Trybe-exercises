@@ -1,6 +1,6 @@
 const express = require('express')
 const error = require('./middlewara/error');
-const artist = require('./controller/artist/router');
+const root = require('./controller/router');
 
 const port = 3000
 
@@ -8,7 +8,7 @@ const app = express()
 
 app.use(express.json());
 
-app.use('/artist', artist);
+app.use(root);
 
 app.use(error)
 

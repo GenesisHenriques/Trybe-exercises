@@ -1,0 +1,6 @@
+apps:
+  - name: t12app
+    script: ./index.js
+    watch: true
+    exec_mode: cluster
+    instances: max

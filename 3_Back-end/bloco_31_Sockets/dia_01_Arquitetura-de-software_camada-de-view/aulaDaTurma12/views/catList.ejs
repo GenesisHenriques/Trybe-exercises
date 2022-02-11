@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gatos</title>
+</head>
+<body>
+
+  /*
+    <% // Tudo aqui dentro é considerado Js %>
+    { <% // Tudo aqui dentro vai retornar algo em html %> }
+  */
+
+  <% if(message) { %>
+    <h1 style="background-color: red"> <%= message %> </h1>
+  <% } %>
+
+  <% if (cats) {%>
+    <ul style="background-color: antiquewhite">
+      <% cats.forEach(cat => { %>
+        <li>Nome: <%= cat.name %> - idade: <%= cat.age %></li>
+      <%})%>
+    </ul>
+  <% } %>
+
+  <form action="/cats" method="POST">
+    <label>Name:</label>
+    <input name="name" type="test">
+    <label>Age:</label>
+    <input name="age" type="number">
+    <button type="submit" target="_blank">Criar novo gato!</button>
+  </form>
+</body>
+</html>

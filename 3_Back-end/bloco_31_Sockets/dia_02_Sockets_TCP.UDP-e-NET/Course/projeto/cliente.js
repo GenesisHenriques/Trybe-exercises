@@ -1,5 +1,5 @@
 const net = require('net');
-/* Através do pacote NET, nós podemos não só criar servidores como podemos conectar nossos clientes aos servidores */
+/* Através do pacote NET, nós podemos não só criar servidores como podemos conectar nossos clientes aos servidoresss */
 const client = net.connect({ port: 8080 }, () => {
   console.log('Cliente conectado ao servidor!');
 });

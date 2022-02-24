@@ -12,8 +12,7 @@ const server = net.createServer((socket) => { // socket = quem está conectando
   guestId ++;
   socket.guest = 'Guest' + guestId; // Adiciona um guest(nome) no socket com o vavlor de 'guest' + guestId
 
-  // .emit = enviar
-  socket.emit('Boas vindas'); // envia uma mensagem para quem acabou de se conectar
+  socket.write('Boas vindas'); // envia uma mensagem para quem acabou de se conectar
 
   sockets.push(socket);
   // console.log('aaaaa', socket);
